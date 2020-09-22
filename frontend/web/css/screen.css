@@ -1,0 +1,247 @@
+@media (min-width:1800px) {
+    body {
+    width: 1200px;
+    height: 800px;
+    font-size: 16px;
+    }
+    .logo-ferma-21{
+        margin-top: 100px;
+    }
+    .prog {
+        margin-top: 11px;
+    }
+    .screen-font{
+        font-size: 17px;
+    }
+
+    .gide1, .gide2, .gide3, .gide4, .gide5, .gide6, .gide7, .gide8, .gide9, .gide10, .gide11, .gide12, .gide13, .gide14  {
+        width: 100px;
+        height: 100px;
+        background-size: 100px;
+    }
+    .home {
+        height: 135px;
+        position: relative;
+        left: 515px;
+        top: 25px;
+    }
+    .screen{
+        width: 72px;
+    }
+    .screen-w{
+        width: 213px;
+    }
+    .gide1 {
+        bottom: 60px;
+        left: 240px;
+    }
+    .gide2 {
+        bottom: 95px;
+        left: 145px;
+    }
+    .gide3 {
+        bottom: 135px;
+        left: 75px;
+    }
+    .gide4 {
+        bottom: 155px;
+        left: 20px;
+    }
+    .gide5 {
+        bottom: 95px;
+        left: 20px;
+    }
+    .gide6 {
+        bottom: 120px;
+        left: 115px;
+    }
+    .gide7 {
+        bottom: 140px;
+        left: 205px;
+    }
+    .gide8 {
+        bottom: 760px;
+        left: 830px;
+    }
+    .gide9 {
+        bottom: 795px;
+        left: 925px;
+    }
+    .gide10 {
+        bottom: 835px;
+        left: 1011px;
+    }
+    .gide11 {
+        bottom: 870px;
+        left: 1070px;
+    }
+    .gide12 {
+        bottom: 785px;
+        left: 1040px;
+    }
+    .gide13 {
+        bottom: 805px;
+        left: 970px;
+    }
+    .gide14 {
+        bottom: 840px;
+        left: 870px;
+    }
+    .pole-1, .pole-2, .pole-3, .pole-4, .pole-5, .pole-6, .pole-7, .pole-8, .pole-9 {
+        height: 129px;
+        width: 200px;
+        background-size: 200px;
+    }
+    .buttuns-1 {
+        height: 50px;
+        width: 90px;
+        transform: skew(118deg, 27deg);
+        position: relative;
+        top: 50px;
+        left: 55px;
+        z-index: 300;
+    }
+    .pole-1{
+        left: 180px;
+        top: 50px;
+    }
+    .pole-2{
+        left: 80px;
+        bottom: 26px;
+    }
+    .pole-3{
+        bottom: 101px;
+        right: 20px;
+    }
+    .pole-4{
+        bottom: 287px;
+        left: 279px;
+    }
+    .pole-5{
+        bottom: 363px;
+        left: 180px;
+    }
+    .pole-6{
+        bottom: 440px;
+        left: 80px;
+    }
+    .pole-7{
+        bottom: 625px;
+        left: 378px;
+    }
+    .pole-8{
+        bottom: 701px;
+        left: 279px;
+    }
+    .pole-9{
+        bottom: 778px;
+        left: 179px;
+    }
+    .btn-mod-1 {
+        transform: skew(239deg, -28deg);
+        position: relative;
+        left: 721px;
+        top: 62px;
+    }
+    .click-2 {
+        position: relative;
+        top: 49px;
+        left: 12px;
+        padding: 18px 55px 18px 20px;
+    }
+    .btn-mod-2 {
+        transform: skew(239deg, -28deg);
+        position: relative;
+        left: 410px;
+        width: 128px;
+        top: 140px;
+        padding: 0px;
+       /* left: 413px;
+        top: 140px;
+        padding: 0px;
+        width: 127px;*/
+    }
+    .brl {
+        border-radius: 0px 0px 0px 10px;
+        position: relative;
+        left: 2px;
+    }
+    .brb {
+        border-radius: 0px 0px 10px 10px;
+        margin: 0 49px;
+    }
+    .gide-product {
+        background-image: url('../img/ssdd.png');
+        height: 208px;
+        width: 169px;
+        background-size: 170px;
+        position: relative;
+        bottom: 77px;
+        left: 330px;
+    }
+    #plants_list {
+        position: relative;
+        bottom: 231px;
+        left: 11px;
+    }
+    .prod-pos1 {
+        position: relative;
+        bottom: 225px;
+        left: 49px;
+        color: #894522;
+        cursor: pointer;
+    }
+    .prod-radio {
+        position: absolute;
+        bottom: 4px;
+        left: -20px;
+    }
+    .prod-pos2 {
+        position: relative;
+        bottom: 193px;
+        left: -13px;
+        color: #894522;
+        cursor: pointer;
+    }
+    .prod-pos3 {
+        position: relative;
+        bottom: 186px;
+        left: 51px;
+        color: #894522;
+        cursor: pointer;
+    }
+    .prod-pos4 {
+        position: relative;
+        bottom: 155px;
+        left: -9px;
+        color: #894522;
+        cursor: pointer;
+    }
+    .prod-pos5 {
+        position: relative;
+        bottom: 153px;
+        left: 59px;
+        font-size: 11px;
+        color: #894522;
+        cursor: pointer;
+    }
+    .prod-check {
+        position: absolute;
+        left: -23px;
+        top: -3px;
+    }
+    .status {
+        right: 30px;
+    }
+    .bgmodal{
+        font-size:14px;
+    }
+    .nones-st{
+        margin-top: 195px;
+        height: 205px;
+    }
+    .ferma-gide-menu {
+        /*margin-top: 17px;*/
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,38 @@
+.sup-index-menu {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+    .sup-index-menu:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #fff;
+    }
+.sup-add-menu {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 15px;
+}
+    .sup-add-menu:hover {
+        text-decoration: none;
+    }
+        .sup-add-menu-active {
+            color: #0C7CD5;
+            font-size: 19px;
+        }
+.sup-list {
+    margin-top: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+.sup-list-title {
+    font-size: 16px;
+}
+.sup-view {
+    margin-top: 20px;
+}
+.add-support-link {
+    margin-left: 16px;
+}

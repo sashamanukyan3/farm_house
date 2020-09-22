@@ -1,0 +1,35 @@
+.gift-list {
+    float: left;
+    margin-left: 22px;
+    margin-bottom: 20px;
+}
+.gift-list-img {
+    width: 105px;
+    height: 95px;
+    margin-bottom: 7px;
+}
+.gift-icon-remove {
+    width: 16px;
+    height: 16px;
+}
+.gift-icon-gift {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+.gift-icon-remove {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+.field-friendgifts-gifts_id {
+    float: left;
+}
+.gift-input {
+    width: 400px;
+    float: left;
+}
+.gift-btn {
+    float: left;
+    margin-left: 10px;
+}

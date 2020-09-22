@@ -1,0 +1,124 @@
+<?php
+use frontend\assets\AppAsset;
+use vova07\fileapi\Widget as FileAPI;
+use yii\widgets\ActiveForm;
+use yii\helpers\Url;
+?>
+<link rel="stylesheet" href="/css/social.css">
+<link rel="stylesheet" href="/css/comment.css">
+
+<script>
+    $(document).ready(function(){
+
+        $(".profile-list-remove").click(function(){
+
+            var id = $(this).closest('.profile-list-friends').find('.id').html();
+            var remove_object = $(this);
+            var validate = $('.msg_response').hide();
+            $.ajax({
+                url:: "<?= Url::toRoute('/profile/list/') ?>",
+                type: "POST",
+                async:true,
+                data: {'type': 2, 'id':id}
+            }).done(function(result){
+                if(result.removeFriends){
+                    remove_object.closest('.profile-list-friends').fadeOut();
+                }else{
+                    validate.css('color','red');
+                    validate.append(removeFriends.msg);
+                    validate.show();
+                }
+            });
+
+        });
+
+    });
+</script>
+
+<span class="msg_response alert alert-danger" style="color:red; display: none; position: fixed; z-index: 9999999; right: 0px; top: 52px">
+
+</span>
+
+<!-- CONTENT -->
+<div class="bmd-page-container padd">
+    <div class="container">
+        <div class="col-md-7 col-md-offset-3 boxshow">
+
+            <div class="col-md-3 pag">
+                <div class="">
+                    <a href="<?= Url::toRoute('/profile/index/') ?>">
+                        <img src="<?php
+                        if($user->photo == null){
+                            echo '/avatars/noavatar.png';
+                        }else{
+                            echo '/avatars/'.$user->photo;
+                        }
+                        ?>" alt="Картинка"  type="button" class="imgsize btn btn-primary bmd-ripple" data-bmd-state="primary" data-placement="bottom" title=""/>
+                    </a>
+                    <div class="mag botto">
+                        <span class="curs"> <?= Yii::$app->user->identity->username; ?></span>
+                    </div>
+                    <div class="mag botto">
+                    <span class="curs"> <?= Yii::t('app', 'Уровень') ?>:
+                        <span class="badge bmd-bg-primary rig"><?= $user->level ?></span>
+                    </span>
+                    </div>
+                    <div class="frend">
+                        <div class="botto right-menu-active"><span class="curs"><a href="<?= Url::toRoute('/profile/list/') ?>"><span style="color: #000"><?= Yii::t('app', 'Друзья') ?></span><span class="badge bmd-bg-info rig"><?php echo $friend_count; ?></span></a></span></div>
+                        <div class="botto"><span class="curs"><a href="<?= Url::toRoute('/profile/requests/') ?>"><span style="color: #000"><?= Yii::t('app', 'Заявки') ?></span><span class="badge bmd-bg-info rig"><?php echo $requets_count; ?></span></a></span></div>
+                        <div class="botto"><span class="curs"><a href="<?= Url::toRoute('/message/index/') ?>"><span style="color: #000"><?= Yii::t('app', 'Мои Сообщения') ?></span><span class="badge bmd-bg-info rig"><?php echo $messageCount; ?></span></a></span></div>
+                        <div class="botto"><span class="curs"><a href="<?= Url::toRoute('/profile/giftlist/') ?>"><span style="color: #000"><?= Yii::t('app', 'Мои подарки') ?></span><span class="badge bmd-bg-info rig"><?php echo $giftCount; ?></span></a></span></div>
+                        <form id="search-form" action="<?= Url::toRoute('/profile/search') ?>" method="get" role="form">
+                            <input type="text" class="form-control search-input" id="search-query" name="Search[query]" maxlength="75" placeholder="<?= Yii::t('app', 'Поиск пользователей') ?>">
+                            <button type="submit" class="search-btn" name="search-button"><img src="/img/search-button.png" alt=""></button>
+                        </form>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="col-md-9 pag">
+
+                <?php if(isset($user_friends) && count($user_friends) > 0){ ?>
+                    <?php foreach ($user_friends as $friend) { ?>
+
+                        <?php $form = \yii\widgets\ActiveForm::begin(['validateOnSubmit' => false]); ?>
+
+                        <div class="profile-list-friends">
+
+                            <img class="profile-list-img" src="<?php if($friend->user->photo == null){
+                                echo '/avatars/noavatar.png';
+                            }else{
+                                echo '/avatars/'.$friend->user->photo;
+                            } ?>" alt="">
+
+                            <a href="<?= Url::toRoute('/profile/view/' . $friend->user->username) ?>" class="profile-list-username"><?php echo $friend->user->first_name; ?> <?php echo $friend->user->last_name; ?> (<?= $friend->user->username; ?>)</a>
+                            <br><br>
+                            <a href="<?= Url::toRoute('/profile/gift?username=' . $friend->user->username) ?>" title="<?= Yii::t('app', 'Сделать подарок') ?>">
+                                <img src="/img/gift.png" class="gift-icon-gift" alt="">
+                            </a>
+                            <a href="javascript:void(0);" class="profile-list-remove" title="<?= Yii::t('app', 'Убрать из друзей') ?>">
+                                <img src="/img/remove.png" class="gift-icon-remove" alt="">
+                            </a>
+                            <a href="<?= Url::toRoute('/mails/send?username=' . $friend->user->username) ?>" class="list-send-mail" title="<?= Yii::t('app', 'Написать письмо') ?>">
+                                <img src="/img/mails-icon.png" class="list-mails-icon" alt="">
+                            </a>
+
+                            <span class="id" style="display: none;"><?= $friend->id; ?></span>
+
+                            <div style="clear:both;"></div>
+                        </div>
+
+                        <?php \yii\widgets\ActiveForm::end(); ?>
+
+                    <?php } ?>
+
+                <?php }else{ ?>
+                    <?= Yii::t('app', 'У вас пока нет друзей') ?>
+                <?php } ?>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<?= \frontend\widgets\ReviewsWidget::widget(); ?>

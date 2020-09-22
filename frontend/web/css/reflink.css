@@ -1,0 +1,25 @@
+.reflink-img {
+    max-width: 470px;
+    margin-bottom: 10px;
+}
+.reflink-list {
+    margin-right: 35px;
+    margin-bottom: 40px;
+}
+.reflink-list-text {
+    margin-top: 5px;
+}
+.reflink-textarea {
+    width: 500px;
+    height: 70px!important;
+}
+.reflink-input {
+    width: 500px;
+}
+.input-div {
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+    .input-div input {
+        margin-bottom: 10px;
+    }

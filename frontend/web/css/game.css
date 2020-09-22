@@ -1,0 +1,151 @@
+.table_info {
+    background-image: url(../img/d.jpg);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.rw {
+    margin: 10px;
+}
+
+.game_ava {
+    border-radius: 10px;
+    width: 60px;
+}
+
+.nonestyle {
+    padding: 0px;
+    margin: 0px;
+}
+
+.set {
+    float: right;
+    margin-top: 5px;
+}
+
+.prog {
+    margin-top: 10px;
+}
+
+.non {
+    margin-bottom: 5px;
+}
+
+.marg {
+    margin-top: 2px;
+}
+
+.nstyle {
+    padding: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sete {
+    float: right;
+    font-size: 10px;
+}
+ ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 2px; /* Значение полей */
+   }
+   ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 1px; /* Отступ слева */
+    padding: 1px; /* Поля вокруг текста */
+   }
+.baac {
+    padding: 7px 4px 4px 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.baac1 {
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.krug {
+    border-radius: 11px;
+}
+
+.sett {
+    float: left;
+}
+
+.icons {
+    width: 60px;
+}
+
+.tree {
+    color: #C38E4C;
+}
+
+.lists {
+    list-style: none;
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+
+.bgmodal {
+    background-image: url(../img/1.png);
+    width: 700px;
+    height: 656px;
+}
+
+.modalp {
+    margin: 7px auto !important;
+}
+
+.modal_button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid #A05600;
+}
+
+.content_modal_tabs {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #A05600;
+    color: #CCC;
+}
+
+.button_tabs {
+    padding: 5px 15px !important;
+}
+.button_tabs:hover {
+    background: none !important;
+}
+
+.col-mod-1 {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.modal_padding_top {
+    margin-top: 4px;
+}
+
+.col-min {
+    padding: 0px;
+    margin-top: -5px;
+}
+
+.sty {
+    width: 36px;
+}
+
+.col-mod-set {
+    position: relative;
+    top: 14px;
+    left: 17px;
+}
+
+.zib14 {
+    width: 90px;
+    position: relative;
+    top: 341px;
+    left: 55px;
+}

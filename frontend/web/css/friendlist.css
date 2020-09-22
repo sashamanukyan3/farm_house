@@ -1,0 +1,54 @@
+.clear {
+    clear: both;
+}
+#friendlist {
+    padding-left: 20px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+.lists {
+    margin-bottom: 20px;
+}
+.friendlist-image {
+    float: left;
+}
+.friendlist-text {
+    float: left;
+}
+.friendlist-ava {
+    width: 140px;
+    height: 150px;
+    margin-right: 20px;
+}
+.friendlist-login {
+    margin-top: 10px;
+}
+.friendlist-username {
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #fff;
+}
+.friendlist-level {
+
+}
+.friendlist-email {
+
+}
+    .friendlist-email:hover {
+        text-decoration: none;
+    }
+    .friendlist-remove:hover {
+        text-decoration: none;
+    }
+.friendlist-mail {
+
+}
+.friendlist-mail:hover {
+    text-decoration: none;
+}
+.search-input {
+    width: 100%;
+}
+.search-btn {
+    right: 5px;
+}

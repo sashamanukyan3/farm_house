@@ -1,0 +1,107 @@
+.bold {
+    font-weight: bold;
+}
+.mails_title {
+    color: #fff!important;
+}
+.mails-inview-title {
+    color: #0C7CD5!important;
+}
+.mails-inview-text {
+    color: #fff !important;
+}
+#search-form {
+    position: relative;
+}
+.search-input {
+    position: relative;
+    width: 100%;
+    padding-right: 35px;
+    overflow: hidden;
+}
+.search-btn {
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /*z-index: 9999;*/
+    background: transparent;
+    border: 0px;
+}
+.search-btn-index {
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    /*z-index: 9999;*/
+    background: transparent;
+    border: 0px;
+}
+.search-btn-index img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.search-btn img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.msg_response {
+    top: 60px!important;
+    right: 40% !important;
+}
+.close_msg {
+    float: right;
+    margin-left: 7px;
+    font-size: 16px
+}
+.wall_delete {
+    float: right;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.comment-list {
+    position: relative;
+}
+.comment_delete {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#signupform-verifycode-image {
+    height: 35px !important;
+}
+.modal {
+    z-index: 99999999!important;
+}
+.field-signupform-verifycode {
+    margin-left: 100px!important;
+}
+.wall-post-img {
+    max-width: 400px;
+}
+.edit-btn-group {
+    display: inline;
+    float: right;
+}
+.modal-data-menu li a {
+    padding: 10px 6px!important;
+}
+    .modal-data-menu li.active a {
+        color: #000!important;
+        border-bottom: 0px !important;
+        border-color: #949191 !important;
+        background: #F5F4F4!important;
+    }
+        .modal-data-menu li.active a:hover, .modal-data-menu li.active a:focus {
+            color: #000!important;
+        }

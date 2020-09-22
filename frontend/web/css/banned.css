@@ -1,0 +1,15 @@
+.profile-banned-div {
+    width: 300px;
+    position: absolute;
+    right: 15px;
+    height: 140px;
+    display: none;
+}
+    .profile-banned-div textarea {
+        width: 100%;
+        height: 100px;
+    }
+    .profile-banned-div a {
+        float: right;
+        margin-top: 5px;
+    }

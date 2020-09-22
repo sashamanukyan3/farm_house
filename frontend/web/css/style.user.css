@@ -1,0 +1,52 @@
+.ava{
+	width: 80px;
+	height: 65px;
+	border-radius: 10px 10px 0px 0px;
+	margin-top: 10px;
+}
+.ava:hover{
+	border:2px solid #2196F3;
+}
+.to{
+	margin-top: 10px;
+	float: right;
+}
+.pri{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.prb{
+	margin-bottom: 11px;
+}
+.opit{
+	float: right;
+	font-size: 10px;
+}
+.ri{
+	float: right;
+}
+.mes{
+	margin-top: -7px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: #FFB446;
+}
+.mes:hover{
+	color: #FFA927;
+}
+.ex{
+	width: 80px;
+	border-radius: 0px 0px 10px 10px;
+}
+.gamest{
+	background-color: #2196F3 !important;
+}
+.red{
+	background-color: #F44336 !important;
+}
+.mar{
+	margin-left: 48px;
+}
+.p-class-ferma{
+	margin: 0 0 3px;
+}

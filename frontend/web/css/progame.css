@@ -1,0 +1,704 @@
+.click {
+    height: 42px;
+    width: 81px;
+    transform: skew(118deg, 26deg);
+    position: relative;
+    left: 45px;
+    top: 45px;
+    cursor: pointer;
+    z-index: 300;
+}
+
+.click-1 {
+    position: relative;
+    top: 35px;
+    left: 2px;
+    padding: 20px 40px 15px 20px;
+}
+.default {
+    background-image: url('../img/game/p0.png');
+}
+.available {
+    background-image: url('../img/game/build.png');
+}
+.available2 {
+    background-image: url('../img/game/p-sale.png');
+}
+.not_available {
+    background-image: url('../img/game/p2.png');
+}
+
+/*Пшеница*/
+.wheat_sow {
+    background-image: url('../img/game/wheat-sow.png');
+}
+.wheat_sow_f {
+    background-image: url('../img/game/wheat-sow-u.png');
+}
+.wheat_ready {
+    background-image: url('../img/game/p10.png');
+}
+
+/*Клевер*/
+.clover_sow {
+    background-image: url('../img/game/p4.png');
+}
+.clover_sow_f {
+    background-image: url('../img/game/cloveru.png');
+}
+.clover_ready {
+    background-image: url('../img/game/p9.png');
+}
+
+/*Капуста*/
+.cabbage_sow {
+    background-image: url('../img/game/kapusta.png');
+}
+.cabbage_sow_f {
+    background-image: url('../img/game/kapusta.png');
+}
+.cabbage_ready {
+    background-image: url('../img/game/p8.png');
+}
+
+/*Свекла*/
+.beets_sow {
+    background-image: url('../img/game/p6.png');
+}
+.beets_sow_f {
+    background-image: url('../img/game/pu4.png');
+}
+.beets_ready {
+    background-image: url('../img/game/p7.png');
+}
+.ready_for_sow {
+    background-image: url('../img/game/p2.png');
+}
+.ready_paddock_chicken {
+    background-image: url('../img/game/zag-kur.png');
+}
+.ready_paddock_bull {
+    background-image: url('../img/game/zag-bik.png');
+}
+.ready_paddock_goat {
+    background-image: url('../img/game/zag-koz.png');
+}
+.ready_paddock_cow {
+    background-image: url('../img/game/zag-kor.png');
+}
+.ready_factory_dough {
+    background-image: url('../img/game/p-ftesta.png');
+}
+.ready_factory_mince {
+    background-image: url('../img/game/p-ffarsh.png');
+}
+.ready_factory_cheese {
+    background-image: url('../img/game/p-fsir.png');
+}
+.ready_factory_curd {
+    background-image: url('../img/game/p-ftest.png');
+}
+.ready_meat_bakery {
+    background-image: url('../img/game/p-ppf.png');
+}
+.ready_cheese_bakery {
+    background-image: url('../img/game/p-pps.png');
+}
+.ready_curd_bakery{
+    background-image: url('../img/game/p-ppt.png');
+}
+.set-chicken {
+    background-image: url('../img/animals/set.png');
+}
+.chicken-default{/*сытая кура не требующая действия*/
+    background-image: url('../img/animals/kur.png');
+}
+.feed-chicken {/*покормить*/
+    background-image: url('../img/animals/kur2.png');
+}
+.chicken-egg{/*снесла яйцо*/
+    background-image: url('../img/animals/kur1.png');
+}
+.set-bull {
+    background-image: url('../img/animals/set.png');
+}
+.bull-default{/*сытая кура не требующая действия*/
+    background-image: url('../img/animals/bichok.png');
+}
+.feed-bull {/*покормить*/
+    background-image: url('../img/animals/bichok2.png');
+}
+.bull-meat{/*снесла яйцо*/
+    background-image: url('../img/animals/bichok1.png');
+}
+.set-goat {
+    background-image: url('../img/animals/set.png');
+}
+.goat-default{/*сытая кура не требующая действия*/
+    background-image: url('../img/animals/koz.png');
+}
+.feed-goat {/*покормить*/
+    background-image: url('../img/animals/koz2.png');
+}
+.goat-milk{/*снесла яйцо*/
+    background-image: url('../img/animals/koz1.png');
+}
+.set-cow {
+    background-image: url('../img/animals/set.png');
+}
+.cow-default{/*сытая кура не требующая действия*/
+    background-image: url('../img/animals/kor.png');
+}
+.feed-cow {/*покормить*/
+    background-image: url('../img/animals/kor2.png');
+}
+.cow-milk{/*снесла яйцо*/
+    background-image: url('../img/animals/kor1.png');
+}
+.pole-1 {
+    /*background-image: url(../img/game/p2.png);*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    left: 120px;
+}
+.pole-2{
+    /*background-image: url(../img/game/p0.png);*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    left: 35px;
+    bottom: 64px;
+}
+.pole-3{
+    /*background-image: url(../img/game/p0.png);*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    bottom: 128px;
+    right: 50px;
+}
+.pole-4{
+    /*background-image: url(../img/game/p0.png);*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    bottom: 288px;
+    left: 204px;
+}
+.pole-5{
+    /*background-image: url(../img/game/p2.png);*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    bottom: 352px;
+    left: 119px;
+}
+.pole-6{
+    /*background-image: url(../img/game/p2.png);*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    bottom: 417px;
+    left: 34px;
+}
+.pole-7{
+    /*background-image: url(../img/game/p2.png);*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    bottom: 576px;
+    left: 287px;
+}
+.pole-8{
+    /*background-image: url(../img/game/p2.png);*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    bottom: 640px;
+    left: 203px;
+}
+.pole-9{
+    /*background-image: url(../img/game/p2.png) ;*/
+    height: 110px;
+    width: 170px;
+    position: relative;
+    bottom: 705px;
+    left: 118px;
+}
+.zagon-1 {
+    /*background-image: url(../img/animals/kor.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 190px;
+    top: 95px;
+}
+.zagon-2 {
+    /*background-image: url(../img/animals/koz.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 115px;
+    top: 35px;
+}
+.zagon-3 {
+    /*background-image: url(../img/animals/bichok.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+}
+.zagon-4 {
+    /*background-image: url(../img/animals/kur.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 263px;
+    bottom: 170px;
+}
+.zagon-5 {
+    /*background-image: url(../img/animals/kor1.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 185px;
+    bottom: 228px;
+}
+.zagon-6 {
+    /*background-image: url(../img/animals/koz1.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 100px;
+    bottom: 283px;
+}
+.zagon-7 {
+    /*background-image: url(../img/animals/bichok1.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 340px;
+    bottom: 435px;
+}
+.zagon-8 {
+    /*background-image: url(../img/salel.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 260px;
+    bottom: 490px;
+}
+.zagon-9 {
+    /*background-image: url(../img/sale.png);*/
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 180px;
+    bottom: 545px;
+}
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    /*background: #FBFCF4 url(../img/loading.gif) no-repeat center center;*/
+}
+.gide1 {
+    background-image: url("../img/building/zagr1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 70px;
+    left: 180px;
+}
+
+.gide2 {
+    background-image: url("../img/building/zagb1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 95px;
+    left: 115px;
+}
+
+
+.gide3 {
+    background-image: url("../img/building/zagz12.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 120px;
+    left: 50px;
+}
+
+.click-2 {
+    position: relative;
+    top: 35px;
+    left: 12px;
+    padding: 15px 36px 15px 20px;
+}
+
+.gide4 {
+    background-image: url("../img/building/zagk1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 140px;
+    left: 15px;
+}
+.gide5 {
+    background-image: url("../img/building/1131.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 95px;
+    left: 35px;
+}
+.gide6 {
+    background-image: url("../img/building/sklad.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 110px;
+    left: 85px;
+}
+.gide7 {
+    background-image: url("../img/building/pole.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 125px;
+    left: 155px;
+}
+.gide8 {
+    background-image: url("../img/building/ftesta1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 590px;
+    left: 620px;
+}
+.gide9 {
+    background-image: url("../img/building/ffarsh1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 615px;
+    left: 690px;
+}
+.gide10 {
+    background-image: url("../img/building/fsir1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 645px;
+    left: 755px;
+}
+.gide11 {
+    background-image: url("../img/building/ftvor1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 675px;
+    left: 805px;
+}
+.gide12 {
+    background-image: url("../img/building/ppf1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 610px;
+    left: 785px;
+}
+.gide13 {
+    background-image: url("../img/building/pps1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 625px;
+    left: 725px;
+}
+.gide14 {
+    background-image: url("../img/building/ppt1.png");
+    width: 75px;
+    height: 75px;
+    position: relative;
+    bottom: 650px;
+    left: 650px;
+}
+
+.click-z {
+    height: 37px;
+    width: 70px;
+    transform: skew(118deg, 26deg);
+    position: relative;
+    left: 23px;
+    top: 68px;
+    cursor: pointer;
+    z-index: 300;
+}
+.label-s {
+    position: relative;
+    top: 3px;
+    left: 45px;
+    font-style: initial;
+    font-weight: bold;
+}
+
+.buttuns {
+    height: 41px;
+    width: 77px;
+    transform: skew(118deg, 26deg);
+    position: relative;
+    top: 45px;
+    left: 20px;
+    z-index: 300;
+}
+
+.status {
+    position: relative;
+    top: 5px;
+    right: 30px;
+    border: 1px solid #3C4E32;
+}
+
+.status2 {
+    position: relative;
+    top: 50px;
+    left: 60px;
+    width: 27px;
+    border: 1px solid #3C4E32;
+}
+
+.btn-mod-1 {
+    transform: skew(239deg, -28deg);
+    position: relative;
+    left: 574px;
+    bottom: 25px;
+}
+
+.btn-ink {
+    border-radius: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+.buttuns-1 {
+    height: 41px;
+    width: 77px;
+    transform: skew(118deg, 26deg);
+    position: relative;
+    top: 45px;
+    left: 45px;
+    z-index: 300;
+}
+
+.btn-mod-2 {
+    transform: skew(239deg, -28deg);
+    position: relative;
+    left: 297px;
+    /*left: 299px;*/
+    top: 45px;
+    height: 30px;
+}
+
+.buttuns-2 {
+    height: 35px;
+    width: 70px;
+    transform: skew(118deg, 26deg);
+    position: relative;
+    top: 68px;
+    left: 24px;
+    z-index: 300;
+}
+
+.f-style {
+    background-color: rgb(244, 225, 169);
+    border: 1px solid rgb(222, 187, 128);
+}
+
+.btn-mod-3 {
+    transform: skew(118deg, 27deg);
+    position: relative;
+    right: 140px;
+    bottom: 16px;
+}
+
+.dividerer {
+    height: 1px;
+    overflow: hidden;
+    background-color: #DEBB80;
+}
+.scroll-ferma {
+    height: 415px;
+    overflow: auto;
+    margin-top: 0px;
+    padding-top: 0;
+
+}
+.scroll-ferma-1 {
+    width: 440px;
+    overflow: auto;
+    height: 230px;
+}
+.for-sale-pole {
+    position: relative;
+    top: 12px;
+    left: 25px;
+}
+ul.btn-group-justified>li{
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    background-color: #4CAF50;
+    color: #FFF;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0px;
+    padding: 0px 5px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    /*margin-right: -5px;*/
+    border: 1px solid rgb(73, 160, 72);
+    margin: -2px;
+}
+.btn-group-justified{
+    padding: 0px;
+}
+ul.btn-group-justified>li.active{
+    background-color: #459348;
+}
+ul.btn-group-justified>li>a {
+    color: rgb(255, 255, 255);
+}
+.response-answer{text-align: center;}
+.response-answer2{text-align: center;}
+.response-answer3{text-align: center;}
+.gide-product {
+    background-image: url('../img/ssdd.png');
+    height: 175px;
+    width: 145px;
+    background-size: 145px;
+    position: relative;
+    top: 70px;
+    left: 240px;
+}
+.prod-pos1 {
+    position: relative;
+    bottom: 225px;
+    left: 49px;
+    color: #894522;
+    cursor: pointer;
+}
+
+.prod-radio {
+    position: absolute;
+    bottom: 4px;
+    left: -13px;
+}
+
+.prod-img {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.prod-pos2 {
+    position: relative;
+    bottom: 198px;
+    left: -6px;
+    color: #894522;
+    cursor: pointer;
+}
+
+.prod-pos3 {
+    position: relative;
+    bottom: 195px;
+    left: 51px;
+    color: #894522;
+    cursor: pointer;
+}
+
+.prod-pos4 {
+    position: relative;
+    bottom: 167px;
+    left: 0px;
+    color: #894522;
+    cursor: pointer;
+}
+
+.prod-pos5 {
+    position: relative;
+    bottom: 167px;
+    left: 55px;
+    font-size: 11px;
+    color: #894522;
+    cursor: pointer;
+}
+
+.prod-check {
+    position: absolute;
+    left: -14px;
+    top: -3px;
+}
+.ferma-gide-menu{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.modal-open .modal {
+    overflow-x: initial !important;
+    overflow-y: hidden !important;
+}
+/*info*/
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+.info { background-color: #FFEEBD; border: 1px solid #EBBD7E; color: #C47D2B; font-size: 17px;}
+.ttinfo{margin: 3px 0 0 0;}
+.ttinfo>a:hover{ color: #C47D2B; }
+.tooltip-info {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+.tooltip-info span {
+    margin-left: -999em;
+    position: absolute;
+}
+.tooltip-info:hover span {
+    border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    /*font-family: Calibri, Tahoma, Geneva, sans-serif;*/
+    position: absolute; left: 1em; top: 2em; z-index: 99;
+    margin-left: 30px; width: 680px;
+}
+.tooltip-info:hover img {
+    border: 0; margin: -10px 0 0 -55px;
+    float: left; position: absolute;
+}
+.tooltip-info:hover em {
+    font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+    display: block; padding: 0.2em 0 0.6em 0;
+}
+/*end info*/
+
+
+
+
+
+
+
+
+

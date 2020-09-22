@@ -1,0 +1,6 @@
+<span class="chat-admin">admin:</span><span class="chat-date">(2016-01-20 16:34:26)</span><br><span class="chat-message">Hello</span> <br>
+<span class="chat-admin">admin1:</span><span class="chat-date">(2016-01-20 16:34:40)</span><br><span class="chat-message">Admin ty gde?</span> <br>
+<span class="chat-admin">admin1:</span><span class="chat-date">(2016-01-20 16:34:40)</span><br><span class="chat-message"><img src='/img/smile/B-).png'></span> <br>
+<span class="chat-admin">admin1:</span><span class="chat-date">(2016-01-20 16:34:40)</span><br><span class="chat-message"><img src='/img/smile/.(.png'></span> <br>
+<span class="chat-admin">admin1:</span><span class="chat-date">(2016-01-20 16:34:40)</span><br><span class="chat-message"><img src='/img/smile/like.png'></span> <br>
+<span class="chat-username">admin1:</span><span class="chat-date">(2016-01-20 16:38:19)</span><br><span class="chat-message">asdasd</span> <br>

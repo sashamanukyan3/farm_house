@@ -1,0 +1,18 @@
+.bonus-add {
+    margin-bottom: 30px;
+}
+.bonus-error-msg {
+    position: fixed;
+    top: 55px;
+    left: 0px;
+}
+.bonus_ul {
+    padding: 20px;
+}
+.bonus-title {
+    font-size: 16px;
+}
+.table-title {
+    background: #000;
+    font-size: 15px;
+}

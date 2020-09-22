@@ -1,0 +1,26 @@
+php_value session.auto_start On
+#Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+# Если запрос начинается с /backend/web/, то заменяем на /admin
+RewriteCond %{REQUEST_URI} ^/raimin
+RewriteRule ^raimin\/?(.*) /backend/web/$1
+ 
+# Добавляем другой запрос /frontend/web/$1
+RewriteCond %{REQUEST_URI} !^/(frontend/web|backend/web|raimin)
+RewriteRule (.*) /frontend/web/$1
+ 
+# Если frontend запрос
+RewriteCond %{REQUEST_URI} ^/frontend/web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /frontend/web/index.php
+ 
+# Если backend запрос
+RewriteCond %{REQUEST_URI} ^/backend/web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /backend/web/index.php

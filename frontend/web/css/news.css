@@ -1,0 +1,105 @@
+.news-comment-list {
+    position: relative;
+    width: 70%;
+}
+.news-like {
+    position: absolute;
+    right: 10px;
+    width: 12%;
+    bottom: 20px;
+}
+.news-comment-dislike {
+    position: absolute;
+    right: 0px;
+}
+    .news-comment-dislike a img {
+        width: 25px;
+    }
+        .news-comment-dislike-count {
+            position: absolute;
+            right: 34px;
+            top: 4px;
+        }
+.news-comment-like {
+    position: absolute;
+    right: 60px;
+}
+    .news-comment-like a img {
+        width: 25px;
+    }
+        .news-comment-like-count {
+            position: absolute;
+            right: 36px;
+            top: 6px;
+        }
+
+.comment-text-div {
+    margin-left: 60px;
+    width: 82%;
+
+}
+.news-comment-content {
+    float: left;
+}
+.news-comment-content:hover {
+    color: #fff;
+}
+.news-comment-image {
+    float: left;
+}
+.news-comment-user {
+    float: left;
+}
+.news-comment-content-dislike {
+    color: #777777;
+    display: inline-block;
+    float: left;
+}
+.news-comment-content-dislike:hover {
+    cursor: pointer;
+    color: #ffffff!important;
+}
+
+.news_ul {
+    width: 71%;
+    position: relative;
+}
+.div-like-and-dislike {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+.news-view-div {
+    position: relative;
+}
+.news-dislike-div {
+    float: left;
+    margin-left: 15px;
+}
+.news-dislike-div a img {
+    width: 30px;
+}
+.news-dislike-count {
+    float: left;
+    margin-right: 5px;
+}
+.news-like-div {
+    float: left;
+    margin-left: 10px;
+}
+.news-like-div a img {
+    width: 30px;
+}
+.show-comment-btn {
+    margin-left: 20px;
+}
+    .show-comment-btn:hover {
+        text-decoration: none;
+    }
+.news-comment-post {
+    margin-top: 20px !important;
+}
+.news-backto {
+    font-size: 14px;
+    margin-left: 25px;
+}
