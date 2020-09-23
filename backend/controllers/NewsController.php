@@ -10,7 +10,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\UsersNews;
-
+use yii\web\UploadedFile;
 /**
  * NewsController implements the CRUD actions for News model.
  */
@@ -81,9 +81,21 @@ class NewsController extends Controller
 
         $model = new News();
         $model->created_at = time();
+        
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            ($_FILES["News"]["name"]['image'] ? $model->image = UploadedFile::getInstance($model, 'image') : "");
+            if($model->image && $model->validate()){
+                $model->image->saveAs(Yii::getAlias('@frontend/web/img/news/') . 
+                                $model->image->baseName . '.' . 
+                                $model->image->extension);
+
+                $model->image = $model->image->baseName . '.' . $model->image->extension;
+                $model->save();                
+            }
             return $this->redirect(['view', 'id' => $model->id]);
+
         } else {
+            
             return $this->render('create', [
                 'model' => $model,
             ]);

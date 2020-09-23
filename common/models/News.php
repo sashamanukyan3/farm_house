@@ -38,6 +38,7 @@ class News extends \yii\db\ActiveRecord
     {
         return [
             [['teaser', 'content', 'teaser_en', 'content_en'], 'string'],
+            [['image'], 'file'],
             [['weight', 'is_active','created_at'], 'integer'],
             [['title', 'title_en'], 'string', 'max' => 255]
         ];
@@ -50,6 +51,7 @@ class News extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'image' => 'Картинка',
             'title' => 'Название (ru)',
             'teaser' => 'Краткое описание (ru)',
             'content' => 'Контент (ru)',
